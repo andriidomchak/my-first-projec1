@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+		<script src="app.js" defer></script>
+
+
+	</head>
+	<body>
+		<header class="header">
+			<h4>
+				Good
+				<span class="text-lightprimary">life</span>
+			</h4>
+			<nav class='desktop'>
+				<ul class="navigation">
+					<a href="#welcome">
+						<li>Welcome</li>
+
+					</a>
+					<a href="#become">
+						<li>New Body</li>
+
+					</a>
+					<a href="#premium">
+						<li>Premium</li>
+
+					</a>
+					<a href="#price">
+						<li>Price</li>
+
+					</a>
+					<a href="#contacts">
+						<li>Contacts</li>
+
+					</a>
+				</ul>
+			</nav>
+			<button class="header__login desktop">Login</button>
+			<div class="burger-menu">
+				<button id="burger" class="burger">
+					<img class="btn_burger" src="images/burger-img.png" alt="" />
+				</button>
+
+				<div id="menu" class="burger-slide active">
+					<a class="nav-item block" href="#welcome">Welcome</a>
+					<a class="nav-item block" href="#become">New Body</a>
+					<a class="nav-item block" href="#premium">Premium</a>
+					<a class="nav-item block" href="#price">Price</a>
+					<a class="nav-item block" href="#contacts">Contacts</a>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="welcome" id='welcome'>
+				<img src="images/welcome-bg.png" class="welcome-bg" alt=" " />
+				<h1>
+					Welcome to Good <span class="text-lightprimary">life</span> Gyms
+				</h1>
+				<button class="welcome-btn">See the benefits</button>
+			</section>
+			<section class="become" id='become'>
+				<div class="photos">
+					<img class="photo-1" src="images/meet-1.png" alt="" />
+					<img class="photo-2" src="images/meet-2.png" alt="" />
+				</div>
+				<div class="content">
+					<h4 class="text-primary">Meet your new body</h4>
+					<p class="body-text text-darkgray">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+						eget lectus urna. Nulla magna tortor, bibendum in molestie sed,
+						gravida nec felis. Sed id egestasegestas risus, ut imperdiet augue.
+					</p>
+				</div>
+			</section>
+			<section class="video">
+				<video
+					poster="./images/bg_video.png" id="player" width="100%" height="auto" autoplay muted loop>
+					<source src="./images/bg1mp4.mp4" type="video/mp4" />
+				</video>
+				<div class="content">
+					<h2>Become more than you are.</h2>
+					<p class="subtitle">
+						Staying active is great fun and keeps you healthy.<br />
+						Check out how you can join in.
+					</p>
+					<button>Let’s do it!</button>
+				</div>
+			</section>
+			<section class="premium" id='premium'>
+				<div class="content">
+					<h4 class="text-primary">Premium Facilities</h4>
+					<p class="body-text text-darkgray">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+						eget lectus urna. Nulla magna tortor, bibendum in molestie sed,
+						gravida nec felis. Sed id egestasegestas risus, ut imperdiet augue.
+					</p>
+					<button>Learn more</button>
+				</div>
+
+				<div class="photos">
+					<img class="photo-1" src="images/premium-1.png" alt="" />
+					<img class="photo-2" src="images/premium-2.png" alt="" />
+				</div>
+			</section>
+			<section class="subscribe" id='price'>
+				<ul>
+					<li>
+						<h4 class="price text-primary">40$</h4>
+						<span class="divider"></span>
+						<h4 class="title text-black">Morning</h4>
+						<div class="text-content">
+							<p>
+								1<br />
+								month
+							</p>
+							<p>
+								10<br />
+								free<br />
+								group lessons
+							</p>
+							<p>
+								8:00 - 13:00 <br />
+							</p>
+						</div>
+					</li>
+					<li>
+						<h4 class="price text-primary">80$</h4>
+							<span class="divider"></span>
+						<h4 class="title text-black">Daily</h4>
+						<div class="text-content">
+							<p>
+								1<br />
+								month
+							</p>
+							<p>
+								10<br />free<br />
+								group lessons
+							</p>
+							<p>
+								17:00 - 22:00 <br />
+							</p>
+						</div>
+					</li>
+					<li>
+						<h4 class="price text-primary">200$</h4>
+							<span class="divider"></span>
+						<h4 class="title text-black">Fullday</h4>
+						<div class="text-content">
+							<p>
+								3<br />
+								months
+							</p>
+							<p>
+								50<br />free<br />
+								group lessons
+							</p>
+							<p>
+								Anytime <br />
+								
+							</p>
+						</div>
+					</li>
+				</ul>
+			</section>
+			<section class="form">
+					<h3 class="title">Have any questions?</h3>
+						<form>
+							<div class="fullname">
+
+									<input placeholder="Your name ..." type="text" name="name" />
+									<input placeholder="Your surname ..." type="text" name="surname" />
+							</div>
+								<input placeholder="Email ..." type="email" name="email" />
+							
+
+								<textarea placeholder="Question..." name="message"></textarea>
+							<button type="submit">Send</button>
+						</form>
+			</section>
+			
+			<section class="social" id='contacts'>
+				<h4 class="text-primary">Social</h4>
+				<ul>
+					<li><a href=""><img src="images/fb.svg" width="15px" height="30px" alt="" /></a></li>
+					<li><a href=""><img src="images/yt.svg" width="24px" height="30px" alt="" /></a></li>
+					<li><a href=""><img src="images/ig.svg" width="30px" height="30px" alt="" /></a></li>
+				</ul>
+			</section>
+		</main>
+		<footer>
+			<h3>Good <span class="text-primary">lyfe</span></h3>
+			<a href="">Reach us</a>
+			<ul>
+				<li>
+					<a href="">
+					<img src="images/phone.svg" alt="" />+88 98765 43210</li>
+
+					</a>
+					<a href="">
+						<li><img src="images/mail.svg" alt="" />admin@goodlyfe.co</a></li>
+				<li>
+					<a href="">
+						<img src="images/location.svg" alt="" />90210 Beverly Hills <br />
+					California USA</a>
+				</li>
+			</ul>
+		</footer>
+	</body>
+</html>
